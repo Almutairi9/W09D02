@@ -67,7 +67,7 @@ const Todos = () => {
 
   // update task
   const updateTask = async (id) => {
-    // const task = prompt("update ... ");
+     const task = prompt("update your task ... ");
     try {
       console.log(task);
       await axios.put(
