@@ -10,11 +10,9 @@ const initialState = {
       case "LOGIN":
         const { User, token } = payload;
         localStorage.setItem("token", token);
-        // localStorage.setItem("role", user.role.role);
         return { User, token };
       case "LOGOUT":
         localStorage.removeItem("token");
-        // localStorage.removeItem("role");
         return { User: null, token: "" };
       default:
         return state;
